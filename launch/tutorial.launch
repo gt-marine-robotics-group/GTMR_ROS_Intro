@@ -4,7 +4,7 @@
         <!-- node name and ros graph name -->
         <!--<arg name="camera_name" value="webcam" />-->
         <!-- means video device 0, /dev/video0 -->
-        <arg name="video_stream_provider" value="$(find gtmr_ros_intro)/video/nature.mp4" />
+        <arg name="video_stream_provider" value="$(find GTMR_ROS_Intro)/video/nature.mp4" />
         <!-- set camera fps to (if the device allows) -->
         <!--<arg name="set_camera_fps" value="30"/>-->
         <!-- set buffer queue size of frame capturing to -->
@@ -24,7 +24,7 @@
         <arg name="visualize" value="true" />
    </include>
 
-    <node  name="perception_manager" pkg="gtmr_ros_intro" type="perception_manager.py"/>
-    <node  name="gray_scale" pkg="gtmr_ros_intro" type="gray_scale.py" output = "screen"/>
+    <node  name="perception_manager" pkg="GTMR_ROS_Intro" type="perception_manager.py"/>
+    <node  name="gray_scale" pkg="GTMR_ROS_Intro" type="gray_scale.py" output = "screen"/>
 
 </launch>
